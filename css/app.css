@@ -1,0 +1,71 @@
+body {
+  font-size: 22px;
+  color: #252641;
+  font-weight: 400;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: calc(33/22);
+  padding: 13px 50px;
+  border: 0;
+  outline: none;
+  border-radius: 100rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn--white {
+  background-color: white;
+  color: #6c6c6c;
+}
+.btn--primary {
+  color: white;
+  background-color: #f48c06;
+}
+
+.header {
+  min-height: 1118px;
+  background-image: url(../../images/backgound.png);
+}
+.header-container {
+  max-width: 1725px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+.header-top {
+  padding-bottom: 83px;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.header-buttons {
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 0 34px;
+  text-decoration: none;
+}
+
+.menu {
+  margin-left: auto;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 0 80px;
+}
+.menu-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=app.css.map */
