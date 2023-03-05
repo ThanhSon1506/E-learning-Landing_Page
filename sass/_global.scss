@@ -33,4 +33,52 @@ body {
         background-color: $secondary-color;
     }
 
+    &--pink {
+        color: white;
+        background-color: $pink-light--button;
+    }
+}
+
+.background {
+    &--trans {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 20px 20px 20px 25px;
+        border-radius: 20px;
+        color: $gray-light--text;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 24px;
+        font-family: 'Nunito Sans';
+        gap: 0 32px;
+
+        .content {
+
+            .des {
+                margin-top: calc(34 - 27);
+                font-weight: 600;
+                font-size: 20px;
+                height: 0px;
+            }
+        }
+    }
+
+
+}
+
+.icon {
+    background-color: white;
+    border: 12px solid lightblue;
+    color: lightblue;
+    width: 27.5px;
+    height: 27.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25%;
+
+    i {
+        display: flex;
+    }
 }
