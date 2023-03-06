@@ -10,6 +10,17 @@ body {
     font-family: $font-primary;
 }
 
+.container {
+    max-width: 1725px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.grid {
+    display: grid;
+}
+
 .btn {
     display: inline-block;
     font-size: 22px;
@@ -39,35 +50,43 @@ body {
     }
 }
 
-.background {
-    &--trans {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
-        padding: 20px 20px 20px 25px;
-        border-radius: 20px;
-        color: $gray-light--text;
-        display: flex;
-        align-items: center;
-        font-weight: 700;
-        font-size: 24px;
-        font-family: 'Nunito Sans';
-        gap: 0 32px;
+.scroll-header {
+    box-shadow: 0 1px 4px hsla(228, 4%, 15%, 0.1);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
 
-        .content {
-
-            .des {
-                margin-top: calc(34 - 27);
-                font-weight: 600;
-                font-size: 20px;
-                height: 0px;
-            }
-        }
+    .header-top {
+        margin-top: 0px;
     }
-
-
 }
 
-.icon {
+@mixin themeHome() {
+    position: absolute;
+    // dinh dang
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 20px 20px 25px;
+    border-radius: 20px;
+    color: $gray-light--text;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: 'Nunito Sans';
+    gap: 0 32px;
+
+    .content {
+        .des {
+            margin-top: calc(34 - 27);
+            font-weight: 600;
+            font-size: 20px;
+            height: 0px;
+        }
+    }
+}
+
+@mixin iconHome($color) {
     background-color: white;
     border: 12px solid lightblue;
     color: lightblue;
@@ -77,6 +96,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 25%;
+    color: $color;
+    border: 12px solid $color;
 
     i {
         display: flex;

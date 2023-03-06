@@ -1,23 +1,16 @@
+// ================Header===================
 .header {
-    // min-height: 1118px;
-    // background-image: url(../../images/background.png);
-    margin-bottom: 100px;
-    overflow: hidden;
-    // background-position-y: bottom;
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    background-color: $yellow;
-    border-radius: 0 0 200px 200px;
 
-    &-container {
-        max-width: 1725px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 15px;
-    }
+    overflow: hidden;
+    background-color: $yellow;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: $z-index;
+    transition: .4s;
 
     &-top {
-        padding-bottom: 83px;
         padding-top: 60px;
         display: flex;
         align-items: center;
@@ -31,75 +24,118 @@
         text-decoration: none;
     }
 
-    &-main {
+    .menu {
+        margin-left: auto;
+        list-style-type: none;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        // gap: 0 62px;
-        gap: 0 37px;
-    }
+        gap: 0 80px;
 
-    &-heading {
-        font-size: 54px;
-        font-weight: bold;
-        line-height: calc(81/54);
-        color: $secondary-color;
-
-        span {
-            color: $primary-color;
+        &-link {
+            color: inherit;
+            text-decoration: none;
         }
     }
 
-    &-desc {
-        font-size: 24px;
-        line-height: 160%;
-        margin-bottom: 52px;
-        color: $gray-dark;
-    }
 
-    &-actions {
-        display: flex;
-        align-items: center;
-        gap: 0 40px;
+}
 
-        .btn--primary {
-            padding: 22px 38px;
+// ================Header home data===================
+
+.home {
+    border-radius: 0 0 200px 200px;
+    background-color: $yellow;
+    overflow: hidden;
+    margin-bottom: 100px;
+    margin-top: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 62px;
+    // gap: 0 37px;
+    border-radius: 0 0 200px 200px;
+
+    &-data {
+        .home-title {
+            font-size: 54px;
+            font-weight: bold;
+            line-height: calc(81/54);
+            color: $secondary-color;
+
+            span {
+                color: $primary-color;
+            }
+        }
+
+        .home-description {
+            font-size: 24px;
+            line-height: 160%;
+            margin-bottom: 52px;
+            color: $gray-dark;
+        }
+
+        .home-actions {
+            display: flex;
+            align-items: center;
+            gap: 0 40px;
+
+            .btn--primary {
+                padding: 22px 38px;
+            }
+
+            .watch {
+                display: flex;
+                align-items: center;
+                gap: 0 32px;
+                font-size: 24px;
+                line-height: calc(36/24);
+                color: inherit;
+                text-decoration: none;
+
+                &-icon {
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 100rem;
+                    background: white;
+                    box-shadow: 2px 20px 60px rgba(61, 155, 168, 0.1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 
     &-image {
         position: relative;
 
-        .notification {
+        &__notification {
             position: absolute;
             top: 25%;
             right: 15%;
 
-            &-icon {
-                color: $pink-light--icon;
-                border: 12px solid $pink-light--icon;
+            .icon {
+                @include iconHome($pink-light--icon);
             }
         }
 
-        .canlendar {
-            position: absolute;
+        &__canlendar {
+            @include themeHome();
             top: 30%;
             left: 0;
 
-            &-icon {
-                color: $blue-light--icon;
-                border: 12px solid $blue-light--icon;
+            .icon {
+                @include iconHome($blue-light--icon);
             }
         }
 
-        .envelope {
-            position: absolute;
+        &__envelope {
+            @include themeHome();
             top: 50%;
             right: 0;
 
-            &-icon {
-                color: $orange-light--icon;
-                border: 12px solid $orange-light--icon;
+            .icon {
+                @include iconHome($orange-light--icon);
             }
 
             .check {
@@ -122,18 +158,18 @@
             }
         }
 
-        .info {
-            position: absolute;
+        &__info {
+            @include themeHome();
             top: 75%;
             left: 0;
             display: block;
 
-            &-area {
+            .info-area {
                 display: flex;
                 gap: 0 23px;
             }
 
-            &-icon {
+            .info-icon {
                 position: relative;
                 border-radius: 50%;
 
@@ -164,40 +200,4 @@
         }
     }
 
-}
-
-.menu {
-    margin-left: auto;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    gap: 0 80px;
-
-    &-link {
-        color: inherit;
-        text-decoration: none;
-    }
-}
-
-
-
-.watch {
-    display: flex;
-    align-items: center;
-    gap: 0 32px;
-    font-size: 24px;
-    line-height: calc(36/24);
-    color: inherit;
-    text-decoration: none;
-
-    &-icon {
-        width: 80px;
-        height: 80px;
-        border-radius: 100rem;
-        background: white;
-        box-shadow: 2px 20px 60px rgba(61, 155, 168, 0.1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }

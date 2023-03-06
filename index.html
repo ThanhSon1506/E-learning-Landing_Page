@@ -15,89 +15,96 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <div class="header-container">
-                <div class="header-top">
-                    <img class="header-logo" srcset="./images/logo/logo.png" alt="">
-                    <ul class="menu">
-                        <li class="menu-item"><a href="#!" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#!" class="menu-link">Careers</a></li>
-                        <li class="menu-item"><a href="#!" class="menu-link">Blog</a></li>
-                        <li class="menu-item"><a href="#!" class="menu-link">About Us</a></li>
-                    </ul>
+        <!-- ==============================HEADER=================================== -->
+        <header class="header" id="header">
+            <nav class="header-top container">
+                <img class="header-logo" srcset="./images/logo/logo.png" alt="">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#!" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#!" class="menu-link">Careers</a></li>
+                    <li class="menu-item"><a href="#!" class="menu-link">Blog</a></li>
+                    <li class="menu-item"><a href="#!" class="menu-link">About Us</a></li>
+                </ul>
 
-                    <div class="header-buttons">
-                        <a href="#!" class="btn btn--white">Login</a>
-                        <a href="#!" class="btn btn--primary">Sign Up</a>
-                    </div>
+                <div class="header-buttons">
+                    <a href="#!" class="btn btn--white">Login</a>
+                    <a href="#!" class="btn btn--primary">Sign Up</a>
                 </div>
-                <div class="header-main">
-                    <div class="header-content">
-                        <h1 class="header-heading">
-                            Studying <span>Online is now much easier</span>
-                        </h1>
-                        <p class="header-desc">Skilline is an interesting platform that will teach you in more an
-                            interactive way</p>
-                        <div class="header-actions">
-                            <a href="#!" class="btn btn--primary">Join for free</a>
-                            <a href="#!" class="watch">
-                                <div class="watch-icon">
-                                    <img src="./images/icon/play.png" alt="">
-                                </div>
-                                <span>Watch how it works</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="header-image">
-                        <img srcset="./images/background-header.png" alt="">
-                        <div class="notification ">
-                            <div class="notification-icon icon">
-                                <i class="fa-solid fa-chart-simple"></i>
-                            </div>
-                        </div>
-                        <div class="canlendar background--trans">
-                            <div class="icon canlendar-icon">
-                                <i class="fa-solid fa-calendar-days"></i></i>
-                            </div>
-                            <div class="content canlendar-content ">
-                                <span class="title">250k</span>
-                                <p class="des">Assisted Student</p>
-                            </div>
-                        </div>
-                        <div class="envelope background--trans">
-                            <div class="icon envelope-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="content envelope-content ">
-                                <span class="title">Congratulations </span>
-                                <p class="des">Your admission completed</p>
-                            </div>
-                            <div class="check">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="info background--trans">
-                            <div class="info-area">
-                                <div class="info-icon">
-                                    <img src="./images/icon/avatar.png" alt="">
-                                    <div class="info-icon--check">
-
-                                    </div>
-                                </div>
-                                <div class="content info-content ">
-                                    <span class="title">User Experience Class </span>
-                                    <p class="des">Today at 12.00 PM</p>
-                                </div>
-                            </div>
-                            <div class="btn info-button">
-                                <a href="#!" class="btn btn--pink">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </nav>
         </header>
+        <!-- ==============================MAIN=================================== -->
+        <main id="main" class="container">
+            <!-- ==============================HOME=================================== -->
+            <section class="home section grid" id="home">
+                <div class="home-data">
+                    <h1 class="home-title">
+                        Studying <span>Online is now much easier</span>
+                    </h1>
+                    <p class="home-description">Skilline is an interesting platform that will teach you in more an
+                        interactive way</p>
+                    <div class="home-actions">
+                        <a href="#!" class="btn btn--primary">Join for free</a>
+                        <a href="#!" class="watch">
+                            <div class="watch-icon">
+                                <img src="./images/icon/play.png" alt="">
+                            </div>
+                            <span>Watch how it works</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img srcset="./images/background-header.png" alt="">
+                    <div class="home-image__notification">
+                        <div class="notification-icon icon">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </div>
+                    </div>
+                    <div class="home-image__canlendar">
+                        <div class="icon canlendar-icon">
+                            <i class="fa-solid fa-calendar-days"></i></i>
+                        </div>
+                        <div class="home-image__content canlendar-content ">
+                            <span class="title">250k</span>
+                            <p class="des">Assisted Student</p>
+                        </div>
+                    </div>
+                    <div class="home-image__envelope">
+                        <div class="icon envelope-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="content envelope-content ">
+                            <span class="title">Congratulations </span>
+                            <p class="des">Your admission completed</p>
+                        </div>
+                        <div class="check">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                    </div>
+                    <div class="home-image__info">
+                        <div class="info-area">
+                            <div class="info-icon">
+                                <img src="./images/icon/avatar.png" alt="">
+                                <div class="info-icon--check">
+
+                                </div>
+                            </div>
+                            <div class="content info-content ">
+                                <span class="title">User Experience Class </span>
+                                <p class="des">Today at 12.00 PM</p>
+                            </div>
+                        </div>
+                        <div class="btn info-button">
+                            <a href="#!" class="btn btn--pink">Join Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+    <!-- ==============================SCROLLREVEAL=================================== -->
+    <script src="./js/scrollreveal.min.js"></script>
+    <!-- ==============================MAIN=================================== -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
