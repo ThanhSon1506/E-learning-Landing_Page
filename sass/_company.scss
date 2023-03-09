@@ -1,0 +1,29 @@
+// ============Heading company==================
+.company {
+    margin-bottom: 163px;
+
+    &-heading {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 160%;
+        text-align: center;
+        margin-bottom: 32px;
+        color: $gray;
+    }
+
+    &-logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 75px;
+        max-width: 1370px;
+        padding: 0 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &-logos img {
+        margin: 0 auto;
+        object-position: center;
+    }
+}

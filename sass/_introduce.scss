@@ -1,0 +1,90 @@
+// ======================include===============================
+@mixin themeIntroduce ($background) {
+    background-color: $background;
+}
+
+// ===================Header===============================
+.introduce {
+    margin-bottom: 160px;
+
+    &-header {
+        max-width: 870px;
+        padding: 0 15px;
+        margin: 0 auto 103px;
+        text-align: center;
+
+        &--heading {
+            @extend %textHeading;
+        }
+
+        &--desc {
+            @extend %textDescription;
+        }
+    }
+
+    &-list {
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px;
+    }
+
+    &-item {
+        background: white;
+        box-shadow: 0 10px 60px rgba(38, 45, 118, 0.08);
+        border-radius: 20px;
+        padding: 0px 54px 50px;
+        // display: grid;
+        // grid-template-rows: 100px 1fr auto;
+        display: flex;
+        flex-direction: column;
+        // justify-items: center;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    &-item:nth-child(2) {
+        .introduce-icon {
+            @include themeIntroduce($secondary-color);
+        }
+    }
+
+    &-item:nth-child(3) {
+        .introduce-icon {
+            @include themeIntroduce($blue-light--icon);
+        }
+    }
+
+    &-icon {
+        width: 100px;
+        height: 100px;
+        border-radius: 100rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-50px);
+        margin-bottom: 30px;
+        @include themeIntroduce($purple);
+    }
+
+    &-title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: calc(45 / 30);
+        color: $primary-color;
+        margin-bottom: 24px;
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    &-desc {
+        font-size: 20px;
+        line-height: 180%;
+        color: $gray;
+    }
+}

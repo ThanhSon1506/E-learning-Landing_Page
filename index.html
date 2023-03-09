@@ -5,104 +5,541 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Elearning Landing Page</title>
     <link rel="stylesheet" href="./css//app.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <!-- ==============================HEADER=================================== -->
-        <header class="header" id="header">
-            <nav class="header-top container">
-                <img class="header-logo" srcset="./images/logo/logo.png" alt="">
-                <ul class="menu">
-                    <li class="menu-item"><a href="#!" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#!" class="menu-link">Careers</a></li>
-                    <li class="menu-item"><a href="#!" class="menu-link">Blog</a></li>
-                    <li class="menu-item"><a href="#!" class="menu-link">About Us</a></li>
-                </ul>
+        <div class="wrapper--header">
+            <!-- ==============================HEADER=================================== -->
+            <header class="header" id="header">
+                <nav class="header-top container">
+                    <img class="header-logo" srcset="./images/logo/logo.png" alt="">
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#!" class="menu-link">Home</a></li>
+                        <li class="menu-item"><a href="#!" class="menu-link">Careers</a></li>
+                        <li class="menu-item"><a href="#!" class="menu-link">Blog</a></li>
+                        <li class="menu-item"><a href="#!" class="menu-link">About Us</a></li>
+                    </ul>
 
-                <div class="header-buttons">
-                    <a href="#!" class="btn btn--white">Login</a>
-                    <a href="#!" class="btn btn--primary">Sign Up</a>
-                </div>
-            </nav>
-        </header>
-        <!-- ==============================MAIN=================================== -->
-        <main id="main" class="container">
-            <!-- ==============================HOME=================================== -->
-            <section class="home section grid" id="home">
-                <div class="home-data">
-                    <h1 class="home-title">
-                        Studying <span>Online is now much easier</span>
-                    </h1>
-                    <p class="home-description">Skilline is an interesting platform that will teach you in more an
-                        interactive way</p>
-                    <div class="home-actions">
-                        <a href="#!" class="btn btn--primary">Join for free</a>
-                        <a href="#!" class="watch">
-                            <div class="watch-icon">
-                                <img src="./images/icon/play.png" alt="">
+                    <div class="header-buttons">
+                        <a href="#!" class="btn btn--white">Login</a>
+                        <a href="#!" class="btn btn--primary">Sign Up</a>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container">
+                <!-- ==============================HOME=================================== -->
+                <section class="home section grid" id="home">
+                    <div class="home-data">
+                        <h1 class="home-title">
+                            Studying <span>Online is now much easier</span>
+                        </h1>
+                        <p class="home-description">Skilline is an interesting platform that will teach you in more an
+                            interactive way</p>
+                        <div class="home-actions">
+                            <a href="#!" class="btn btn--primary">Join for free</a>
+                            <a href="#!" class="watch">
+                                <div class="watch-icon">
+                                    <img src="./images/icon/play.png" alt="">
+                                </div>
+                                <span>Watch how it works</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="home-image">
+                        <img srcset="./images/background-header.png" alt="">
+                        <div class="home-image__notification">
+                            <div class="notification-icon icon">
+                                <i class="fa-solid fa-chart-simple"></i>
                             </div>
-                            <span>Watch how it works</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="home-image">
-                    <img srcset="./images/background-header.png" alt="">
-                    <div class="home-image__notification">
-                        <div class="notification-icon icon">
-                            <i class="fa-solid fa-chart-simple"></i>
                         </div>
-                    </div>
-                    <div class="home-image__canlendar">
-                        <div class="icon canlendar-icon">
-                            <i class="fa-solid fa-calendar-days"></i></i>
+                        <div class="home-image__canlendar">
+                            <div class="icon canlendar-icon">
+                                <i class="fa-solid fa-calendar-days"></i></i>
+                            </div>
+                            <div class="home-image__content canlendar-content ">
+                                <span class="title">250k</span>
+                                <p class="des">Assisted Student</p>
+                            </div>
                         </div>
-                        <div class="home-image__content canlendar-content ">
-                            <span class="title">250k</span>
-                            <p class="des">Assisted Student</p>
+                        <div class="home-image__envelope">
+                            <div class="icon envelope-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="content envelope-content ">
+                                <span class="title">Congratulations </span>
+                                <p class="des">Your admission completed</p>
+                            </div>
+                            <div class="check">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="home-image__envelope">
-                        <div class="icon envelope-icon">
-                            <i class="fa-solid fa-envelope"></i>
-                        </div>
-                        <div class="content envelope-content ">
-                            <span class="title">Congratulations </span>
-                            <p class="des">Your admission completed</p>
-                        </div>
-                        <div class="check">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                    </div>
-                    <div class="home-image__info">
-                        <div class="info-area">
-                            <div class="info-icon">
-                                <img src="./images/icon/avatar.png" alt="">
-                                <div class="info-icon--check">
+                        <div class="home-image__info">
+                            <div class="info-area">
+                                <div class="info-icon">
+                                    <img src="./images/icon/avatar.png" alt="">
+                                    <div class="info-icon--check">
 
+                                    </div>
+                                </div>
+                                <div class="content info-content ">
+                                    <span class="title">User Experience Class </span>
+                                    <p class="des">Today at 12.00 PM</p>
                                 </div>
                             </div>
-                            <div class="content info-content ">
-                                <span class="title">User Experience Class </span>
-                                <p class="des">Today at 12.00 PM</p>
+                            <div class="btn info-button">
+                                <a href="#!" class="btn btn--pink">Join Now</a>
                             </div>
                         </div>
-                        <div class="btn info-button">
-                            <a href="#!" class="btn btn--pink">Join Now</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- ==============================MAIN=================================== -->
+        <main>
+            <!-- ==============================COMPANY=================================== -->
+            <section class="company">
+                <p class="company-heading">Trusted by 5,000+ Companies Worldwide</p>
+                <div class="company-logos">
+                    <div class="company-logo">
+                        <img src="./images/logo/google.svg" alt="">
+                    </div>
+                    <!-- item company logo -->
+                    <div class="company-logo">
+                        <img src="./images/logo/facebook.svg" alt="">
+                    </div>
+                    <!-- item company logo -->
+                    <div class="company-logo">
+                        <img src="./images/logo/amazon.svg" alt="">
+                    </div>
+                    <!-- item company logo -->
+                    <div class="company-logo">
+                        <img src="./images/logo/airbnb.svg" alt="">
+                    </div>
+                    <!-- item company logo -->
+                    <div class="company-logo">
+                        <img src="./images/logo/netflix.svg" alt="">
+                    </div>
+                    <!-- item company logo -->
+                    <div class="company-logo">
+                        <img src="./images/logo/grab.svg" alt="">
+                    </div>
+                    <!-- item company logo -->
+                </div>
+            </section>
+            <!-- ==============================INTRODUCE=================================== -->
+            <section class="introduce">
+                <!-- Introduce header -->
+                <div class="introduce-header">
+                    <h2 class="introduce-header--heading">
+                        All-In-One <span>Cloud Software.</span>
+                    </h2>
+                    <p class="introduce-header--desc">
+                        Skilline is one powerful online software suite that combines all the tools needed to run a
+                        successful school or office.
+                    </p>
+                </div>
+                <!-- Introduce header end -->
+                <!-- Introduce list -->
+                <div class="introduce-list">
+                    <div class="introduce-item">
+                        <div class="introduce-icon">
+                            <img src="./images/icon/icon-file.svg" alt="">
                         </div>
+                        <h3 class="introduce-title">
+                            Online Billing, Invoicing, & Contracts
+                        </h3>
+                        <p class="introduce-desc">
+                            Simple and secure control of your organization’s financial and legal transactions. Send
+                            customized invoices and contracts
+                        </p>
+                    </div>
+                    <!-- introduce item -->
+                    <div class="introduce-item">
+                        <div class="introduce-icon">
+                            <img src="./images/icon/icon-canlendar.svg" alt="">
+                        </div>
+                        <h3 class="introduce-title">
+                            Easy Scheduling & Attendance Tracking
+                        </h3>
+                        <p class="introduce-desc">
+                            Schedule and reserve classrooms at one campus or multiple campuses. Keep detailed records of
+                            student attendance
+                        </p>
+                    </div>
+                    <!-- introduce item -->
+                    <div class="introduce-item">
+                        <div class="introduce-icon">
+                            <img src="./images/icon/icon-team.svg" alt="">
+                        </div>
+                        <h3 class="introduce-title">
+                            Customer Tracking
+                        </h3>
+                        <p class="introduce-desc">
+                            Automate and track emails to individuals or groups. Skilline’s built-in system helps
+                            organize
+                            your organization
+                        </p>
+                    </div>
+                    <!-- introduce item -->
+
+                </div>
+                <!-- Introduce List end -->
+            </section>
+            <!-- ==============================ABOUT=================================== -->
+            <section class="about">
+                <div class="about-header">
+                    <h2 class="about-header--heading">
+                        What is <span>Skilline?</span>
+                    </h2>
+                    <p class="about-header--desc">
+                        Skilline is a platform that allows educators to create online classes whereby they can store the
+                        course materials online; manage assignments, quizzes and exams; monitor due dates; grade results
+                        and provide students with feedback all in one place.
+                    </p>
+                </div>
+                <!-- =========about list======== -->
+                <div class="about-list">
+                    <div class="about-item">
+                        <img src="./images/about-1.png" alt="about img" class="about-img">
+                        <div class="about-content">
+                            <h3 class="about-title">
+                                FOR INSTRUCTORS
+                            </h3>
+                            <div class="btn btn--outline">Start a class today</div>
+                        </div>
+                    </div>
+                    <!-- item about -->
+                    <div class="about-item">
+                        <img src="./images/about-2.png" alt="about img" class="about-img">
+                        <div class="about-content">
+                            <h3 class="about-title">
+                                FOR STUDENTS
+                            </h3>
+                            <div class="btn btn--student">Enter access code</div>
+                        </div>
+                    </div>
+                    <!-- item about -->
+                </div>
+                <!-- =========about list end======== -->
+
+            </section>
+            <!-- ==============================ABOUT=================================== -->
+            <section class="youcan">
+                <div class="youcan-content">
+                    <h2 class="youcan-heading">
+                        Everything you can do in a physical classroom,<span> you can do with Skilline.</span>
+                    </h2>
+                    <p class="youcan-desc">
+                        Skilline’s school management software helps traditional and online schools manage scheduling,
+                        attendance, payments and virtual classrooms all in one secure cloud-based system.
+                    </p>
+                    <a href="#!" class="youcan-more">Learn nore</a>
+                </div>
+                <div class="youcan-image">
+                    <img src="./images/youcan.png" alt="youcan">
+                    <div class="youcan-play">
+                        <img src="./images/icon/play.png" alt="icon play">
                     </div>
                 </div>
             </section>
+            <!-- ==============================FEATURE=================================== -->
+            <section class="featur-main">
+                <div class="feature-header">
+                    <h2 class="feature-header--heading">
+                        Our <span>Features</span>
+                    </h2>
+                    <p class="feature-header--desc">
+                        This very extraordinary feature, can make learning activities more efficient
+                    </p>
+                </div>
+                <div class="features">
+                    <!-- =========================SECTION ONE====================================== -->
+                    <div class="feature-section">
+                        <!-- ==========================IMAGE============================= -->
+                        <div class="feature-images">
+                            <img src="./images/feature.png" alt="feature">
+                        </div>
+                        <!-- ==========================IMAGE END============================= -->
+                        <!-- ===========================CONTENT================================ -->
+                        <div class="feature-content">
+                            <h3 class="feature-heading">
+                                A<span> user interface </span>designed for the classroom
+                            </h3>
+                            <ul class="feature-list">
+                                <li class="feature-item">
+                                    <div class="feature-icon">
+                                        <img src="./images/icon/icon-squares.svg" alt="">
+                                    </div>
+                                    <p class="feature-text">
+                                        Teachers don’t get lost in the grid view and have a dedicated Podium space.
+                                    </p>
+                                </li>
+                                <!-- item feature -->
+                                <li class="feature-item">
+                                    <div class="feature-icon">
+                                        <img src="./images/icon/icon-squares-1.svg" alt="">
+                                    </div>
+                                    <p class="feature-text">
+                                        Teachers don’t get lost in the grid view and have a dedicated Podium space.
+                                    </p>
+                                </li>
+                                <!-- item feature -->
+                                <li class="feature-item">
+                                    <div class="feature-icon">
+                                        <img src="./images/icon/icon-users.svg" alt="">
+                                    </div>
+                                    <p class="feature-text">
+                                        Teachers don’t get lost in the grid view and have a dedicated Podium space.
+                                    </p>
+                                </li>
+                                <!-- item feature -->
+                            </ul>
+                        </div>
+                        <!-- ===========================CONTENT END================================ -->
+
+                    </div>
+                    <!-- =========================SECTION ONE END====================================== -->
+                    <!-- =============================SECTION TWO============================================ -->
+                    <div class="feature-section">
+                        <div class="feature-content">
+                            <h2 class="feature-heading"><span>Tools</span> For Teachers And Learners</h2>
+                            <p class="feature-text">
+                                Class has a dynamic set of teaching tools built to be deployed and used during class.
+                                Teachers can handout assignments in real-time for students to complete and submit.
+                            </p>
+                        </div>
+                        <div class="feature-image">
+                            <img src="./images/feature-1.png" alt="feature one">
+                        </div>
+                    </div>
+                    <!-- =============================SECTION TWO END============================================ -->
+                    <!-- =================================SECTION THREE======================================== -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <img src="./images/feature-2.png" alt="image feature two">
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-heading">
+                                Assessments, <span>Quizzes</span>, Tests
+                            </h3>
+                            <p class="feature-text">
+                                Easily launch live assignments, quizzes, and tests.
+                                Student results are automatically entered in the online gradebook.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- =================================SECTION THREE END======================================== -->
+                    <!-- =================================SECTION FOUR======================================== -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <img src="./images/feature-3.png" alt="image feature two">
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-heading">
+                                <span>Class Management</span> Tools for Educators
+                            </h3>
+                            <p class="feature-text">
+                                Easily launch live assignments, quizzes, and tests.
+                                Student results are automatically entered in the online gradebook.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- =================================SECTION FOUR END======================================== -->
+                    <!-- =================================SECTION FIVE======================================== -->
+                    <div class="feature-section">
+                        <div class="feature-image">
+                            <img src="./images/feature-4.png" alt="image feature two">
+                        </div>
+                        <div class="feature-content">
+                            <h3 class="feature-heading">
+                                One-on-One <span>Discussions</span>
+                            </h3>
+                            <p class="feature-text">
+                                Teachers and teacher assistants can talk with students privately without leaving the
+                                Zoom environment.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- =================================SECTION FIVE END======================================== -->
+                    <!-- ======================================BUTTON FEATURE========================================= -->
+                    <div class="feature-section">
+                        <button class="btn btn--outline"><span>See more features</span></button>
+                    </div>
+                    <!-- ======================================BUTTON FEATURE END========================================= -->
+                </div>
+
+            </section>
+
+            <!-- =============================INTEGRATION============================================ -->
+            <section class="integration">
+                <div class="integration-brand">
+                    <img src="./images/one-drive.png" alt="one drive">
+                    <img src="./images/drop-box.png" alt="drop box">
+                    <img src="./images/google-drive.png" alt="google drive">
+                    <img src="./images/team-meeting.png" alt="team meeting">
+                </div>
+                <div class="integration-content">
+                    <h3 class="integration-caption">
+                        INTEGRATIONS
+                    </h3>
+                    <h2 class="integration-heading">
+                        200+ educational tools and platform <span>integrations</span>
+                    </h2>
+                    <p class="integration-text">
+                        Schoology has every tool your classroom needs and comes pre-integrated with more than 200+
+                        tools, student information systems (SIS), and education platforms.
+                    </p>
+                    <a href="#" class="btn btn--secondary">See All Integrations</a>
+                </div>
+            </section>
+            <!-- =============================INTEGRATION END============================================ -->
+            <!-- ===================================TESTIMONIAL=========================================-->
+            <section class="testimonial">
+                <div class="testimonial-content">
+                    <h3 class="testimonial-caption">TESTIMONIAL</h3>
+                    <h2 class="testimonial-heading">What They Say?</h2>
+                    <p class="testimonial-text">
+                        Skilline has got more than 100k positive ratings from our users around
+                        the world.</p>
+                    <p class="testimonial-text">
+                        Some of the students and teachers were greatly helped by the Skilline.
+                    </p>
+                    <p class="testimonial-text">
+                        Are you too? Please give your assessment
+                    </p>
+                    <a href="#!" class="testimonial-button ">
+                        <span>Write your assessment</span>
+                        <div class="testimonial-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="testimonial-slider swiper">
+                    <div class="swiper-wrapper">
+                        <article class="testimonial-item swiper-slide">
+                            <div class="testimonial-image">
+                                <img src="./images/testimonial.png" alt="testtimonial">
+                            </div>
+                            <div class="watch-icon">
+                                <img src="./images/icon/play.png" alt="">
+                            </div>
+                            <div class="testimonial-content--item">
+                                <p class="testimonial-content--heading">
+                                    "Thank you so much for your help. It's exactly what I've been looking for. You won't
+                                    regret
+                                    it. It really saves me time and effort. Skilline is exactly what our business has
+                                    been
+                                    lacking."
+                                </p>
+                                <div class='testimonial-attach'>
+                                    <div class="testimonial-name">
+                                        <p>Gloria Rose</p>
+                                    </div>
+                                    <div class="testimonial-review">
+                                        <div class="testimonial-review--rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-review--text">
+                                            12 reviews at Yelp
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="testimonial-item swiper-slide">
+                            <div class="testimonial-image">
+                                <img src="./images/testimonial.png" alt="testtimonial">
+                            </div>
+                            <div class="watch-icon">
+                                <img src="./images/icon/play.png" alt="">
+                            </div>
+                            <div class="testimonial-content--item">
+                                <p class="testimonial-content--heading">
+                                    "Thank you so much for your help. It's exactly what I've been looking for. You won't
+                                    regret
+                                    it. It really saves me time and effort. Skilline is exactly what our business has
+                                    been
+                                    lacking."
+                                </p>
+                                <div class='testimonial-attach'>
+                                    <div class="testimonial-name">
+                                        <p>Gloria Rose</p>
+                                    </div>
+                                    <div class="testimonial-review">
+                                        <div class="testimonial-review--rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-review--text">
+                                            12 reviews at Yelp
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="testimonial-item swiper-slide">
+                            <div class="testimonial-image">
+                                <img src="./images/testimonial.png" alt="testtimonial">
+                            </div>
+                            <div class="watch-icon">
+                                <img src="./images/icon/play.png" alt="">
+                            </div>
+                            <div class="testimonial-content--item">
+                                <p class="testimonial-content--heading">
+                                    "Thank you so much for your help. It's exactly what I've been looking for. You won't
+                                    regret
+                                    it. It really saves me time and effort. Skilline is exactly what our business has
+                                    been
+                                    lacking."
+                                </p>
+                                <div class='testimonial-attach'>
+                                    <div class="testimonial-name">
+                                        <p>Gloria Rose</p>
+                                    </div>
+                                    <div class="testimonial-review">
+                                        <div class="testimonial-review--rate">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="testimonial-review--text">
+                                            12 reviews at Yelp
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </section>
+            <!-- ===================================TESTIMONIAL END=========================================-->
         </main>
+
     </div>
     <!-- ==============================SCROLLREVEAL=================================== -->
     <script src="./js/scrollreveal.min.js"></script>
+    <!--=============== SWIPER JS ===============-->
+    <script src="./js/swiper-bundle.min.js"></script>
     <!-- ==============================MAIN=================================== -->
     <script src="./js/main.js"></script>
 </body>

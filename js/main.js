@@ -20,3 +20,16 @@ sr.reveal(`.home-image__canlendar`, { delay: 600 });
 sr.reveal(`.home-image__envelope`, { delay: 700 });
 sr.reveal(`.home-image__info`, { delay: 800, origin: 'bottom' });
 
+/*=============== SWIPER POPULAR ===============*/
+var swiperPopular = new Swiper(".testimonial-slider", {
+    spaceBetween: 32,
+    grabCursor: true,
+    // centeredSlides: true,
+    slidesPerView: 'auto',
+    // loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
